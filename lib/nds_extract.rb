@@ -27,6 +27,8 @@ end                            #end method
 def list_of_directors(source)
   director_names = []
   i = 0 
+  
+  while i < source.length do 
 end
 
 def total_gross(source)

@@ -25,7 +25,7 @@ def gross_for_director(d)       #define method gross_for_director, accepts d
 end                            #end method 
 
 def list_of_directors(source)
-  # Write this implementation
+  director_names = 
 end
 
 def total_gross(source)

@@ -37,6 +37,8 @@ def list_of_directors(source)
 end
 
 def total_gross(source)
+  
+  
   total = 0 
   i = 0 
   

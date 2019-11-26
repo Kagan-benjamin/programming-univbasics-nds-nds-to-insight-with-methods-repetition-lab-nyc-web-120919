@@ -19,8 +19,7 @@ def gross_for_director(d)       #define method gross_for_director, accepts d
   while index < d[:movies].length do  #sets while condition, loop through all                                       :movies for d   
     total += d[:movies][index][:worldwide_gross] #add value at :worldwide_gross                         for current index to total  
     index += 1                          #increments counter 
-  end
-
+  end                                   #end while loop
   total
 end
 

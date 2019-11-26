@@ -29,7 +29,7 @@ def list_of_directors(source)
   i = 0 
   
   while i < source.length do 
-    director_names puts source[i][:names]
+    director_names puts source[i][:name]
     
     i += 1 
   end

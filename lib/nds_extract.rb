@@ -5,12 +5,12 @@ def directors_totals(source)    #define method directors_totals, accepts source
   result = {}                   # creates empty hash named result 
   director_index = 0            # sets counter variable director_index to 0 
   while director_index < source.size do # while condition, run through all                                                   elements of source
-    director = source[director_index]    # sets local variable director 
-    result[director[:name]] = gross_for_director(director)
-    director_index += 1
-  end
-  result
-end
+    director = source[director_index]    # sets var director to current index  
+    result[director[:name]] = gross_for_director(director) #adds name at    current index to hash result as key with value gross_for_director at current index.
+    director_index += 1   #increments counter 
+  end                     #end while loop 
+  result                #sets value of directors_totals method to result hash 
+end                      #end method 
 
 def gross_for_director(d)
   total = 0

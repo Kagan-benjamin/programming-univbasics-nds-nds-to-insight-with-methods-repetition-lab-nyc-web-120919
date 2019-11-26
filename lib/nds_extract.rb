@@ -32,6 +32,7 @@ def list_of_directors(source)
     director_names puts source[i][:name]
     i += 1 
   end
+  
   director_names 
 end
 

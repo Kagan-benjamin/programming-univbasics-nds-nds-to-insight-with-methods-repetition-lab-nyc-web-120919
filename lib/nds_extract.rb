@@ -1,11 +1,11 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require_relative './directors_database'
 
-def directors_totals(source) 
-  result = {}
-  director_index = 0
-  while director_index < source.size do
-    director = source[director_index]
+def directors_totals(source)    #define method directors_totals, accepts source
+  result = {}                   # creates empty hash named result 
+  director_index = 0            # sets counter variable director_index to 0 
+  while director_index < source.size do # while condition, run through all                                                   elements of source
+    director = source[director_index]    # sets local variable director 
     result[director[:name]] = gross_for_director(director)
     director_index += 1
   end

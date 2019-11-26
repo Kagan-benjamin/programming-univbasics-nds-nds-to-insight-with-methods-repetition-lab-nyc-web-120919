@@ -21,8 +21,8 @@ def gross_for_director(d)       #define method gross_for_director, accepts d
     index += 1                          #increments counter 
   end                                   #end while loop
 
-  total
-end
+  total                   #sets value of gross_for_director to var total  
+end                            #end method 
 
 def list_of_directors(source)
   # Write this implementation

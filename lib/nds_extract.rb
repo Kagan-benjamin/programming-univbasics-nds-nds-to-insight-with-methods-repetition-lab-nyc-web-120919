@@ -12,13 +12,13 @@ def directors_totals(source)    #define method directors_totals, accepts source
   result                #sets value of directors_totals method to result hash 
 end                      #end method 
 
-def gross_for_director(d)
-  total = 0
-  index = 0
+def gross_for_director(d)       #define method gross_for_director, accepts d 
+  total = 0                     #sets var total to 0
+  index = 0                     #sets counter var index to 0 
 
-  while index < d[:movies].length do
-    total += d[:movies][index][:worldwide_gross]
-    index += 1
+  while index < d[:movies].length do  #sets while condition, loop through all                                       :movies for d   
+    total += d[:movies][index][:worldwide_gross] #add value at :worldwide_gross                         for current index to total  
+    index += 1                          #increments counter 
   end
 
   total
